@@ -1,0 +1,25 @@
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+/* Courses */
+
+.courses {
+  flex-wrap: wrap;
+}

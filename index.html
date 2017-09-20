@@ -1,11 +1,18 @@
 <!DOCTYPE html>
+
+<!-- TODO:
+- pull hr's
+- add favicon
+-->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
-    <!-- <link href="resources/css/reset.css" rel="stylesheet" href="/css/master.css"> -->
-    <link href="resources/css/style.css" rel="stylesheet" href="/css/master.css">
+    <!-- <link href="resources/css/reset.css" rel="stylesheet" type="text/css"> -->
+    <link href="resources/css/style.css" rel="stylesheet" type="text/css">
   </head>
+
   <body>
 
 <!-- Header -->
@@ -15,7 +22,7 @@
           <img src="resources/images/ic-logo.svg" alt="">
           <span>Colmar Academy</span>
         </div>
-        <ul>
+        <ul class="flex">
           <li>On campus</li>
           <li>Online</li>
           <li>For companies</li>
@@ -24,23 +31,24 @@
       </nav>
     </header>
 <hr>
+
 <!-- Main Container -->
     <main>
 
 <!-- Banner -->
-      <section class="banner">
+      <section class="banner flex">
         <h1 class="hide">Get Started</h1>
         <img src="resources/images/banner.jpg" alt="Three students studying at a picnic table">
         <div>
           <h1>Learn something new every day</h1>
           <h3>Every song you loved when you were young turns into Tintern Abbey.</h3>
-          <button>
+          <button>Start here</button>
         </div>
       </section>
 <hr>
 
 <!-- Info Section -->
-      <section class="info">
+      <section class="info flex">
         <h1 class="hide">General Information</h1>
         <div class="jumbotron">
           <img src="resources/images/information-main.jpg" alt="Man reading a book outdoors">
@@ -49,8 +57,8 @@
           <p>Emanuel, Sr. Strategist at Hiring.com</p>
         </div> <!-- closes jumbotron -->
 
-        <aside>
-          <div class="aside">
+        <aside class="flex column">
+          <div class="aside flex">
             <img src="resources/images/information-orientation.jpg" alt="Overhead of people walking a cobblestone path">
             <div class="text">
               <h3>Orientation date</h3>
@@ -59,7 +67,7 @@
             </div>
           </div>
 
-          <div class="aside">
+          <div class="aside flex">
             <img src="resources/images/information-campus.jpg" alt="Wood-walled study hall with large map">
             <div class="text">
               <h3>Our campus</h3>
@@ -68,7 +76,7 @@
             </div>
           </div>
 
-          <div class="aside">
+          <div class="aside flex">
             <img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sacks, svelte in a beret">
             <div class="text">
               <h3>Special guest lecture</h3>
@@ -85,7 +93,7 @@
         <h1 class="hide">Sample course lists</h1>
         <h2>Start learning</h2>
 
-        <div class="courses"> <!-- Courses container -->
+        <div class="courses flex"> <!-- Courses container -->
           <div class="course">
             <img src="resources/images/course-software.jpg" alt="">
             <div class="text">
@@ -148,44 +156,48 @@
       <section class="theses">
         <h1 class="hide">Recent thesis projects</h1>
         <h2>Thesis exhibit</h2>
-        <div class="video">
-          <video controls preload="metadata">
-            <source src="resources/videos/thesis.mp4" type="video/mp4">
-          </video>
-          <div class="text">
-            <h3>Reimagine urban</h3>
-            <blockquote>Here's the words under the video. They go on for a bit and you're gonna have to get the quote out the video.</blockquote>
-          </div>
-        </div>
 
-        <aside>
-          <div class="aside">
-            <img src="resources/images/thesis-fisma.jpg" alt="Overhead of cluttered desk">
+        <div class="flex"> <!-- Container for thesis section -->
+          <div class="video flex column">
+            <video controls preload="metadata">
+              <source src="resources/videos/thesis.mp4" type="video/mp4">
+            </video>
             <div class="text">
-              <h3>Firma: Design and Prototype</h3>
-              <p>Designer showcase of newly prototyped products</p>
+              <h3>Reimagine urban</h3>
+              <blockquote>Here's the words under the video. They go on for a bit and you're gonna have to get the quote out the video.</blockquote>
             </div>
           </div>
-          <div class="aside">
-            <img src="resources/images/thesis-now-and-then.jpg" alt="Empire State Building in situ">
-            <div class="text">
-              <h3>Now and Then</h3>
-              <p>Research study about New York</p>
+
+          <aside class="flex column">
+            <div class="aside flex">
+              <img src="resources/images/thesis-fisma.jpg" alt="Overhead of cluttered desk">
+              <div class="text">
+                <h3>Firma: Design and Prototype</h3>
+                <p>Designer showcase of newly prototyped products</p>
+              </div>
             </div>
-          </div>
-        </aside>
+            <div class="aside flex">
+              <img src="resources/images/thesis-now-and-then.jpg" alt="Empire State Building in situ">
+              <div class="text">
+                <h3>Now and Then</h3>
+                <p>Research study about New York</p>
+              </div>
+            </div>
+          </aside>
+
+        </div> <!-- closes thesis section container -->
       </section>
 
     </main>
   <hr>
 
     <!-- Footer -->
-    <footer>
+    <footer class="flex">
       <div class="copyright">
         <span>&copy; 2017 Colmar Academy. All rights reserved.</span>
       </div>
       <nav>
-        <ul>
+        <ul class="flex">
           <li>Terms</li>
           <li>Privacy</li>
         </ul>

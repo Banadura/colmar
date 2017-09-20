@@ -4,17 +4,20 @@
 - add favicon
 - add mobile to html
 - come back to media queries after type choices
-
+- fix header
+- animations!
+- choose colors
+- refactor ".align" stuff
+- fix dumb copy
 -->
 
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Colmar Academy</title>
-    <meta charset='UTF-8'/>
     <meta name='viewport'
       content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-    <link href="https://fonts.googleapis.com/css?family=Lato|Vollkorn" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Vollkorn&amp;subset=latin-ext" rel="stylesheet">
     <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
     <link href="resources/css/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -26,7 +29,7 @@
       <nav class="flex">
         <div class="logo flex">
           <img src="resources/images/ic-logo.svg" alt="">
-        <span>Colmar Academy</span>
+          <span>ColmarAcademy</span>
         </div>
         <ul class="flex">
           <li>On campus</li>
@@ -52,7 +55,6 @@
 
 <!-- Main Container -->
     <main>
-
 <!-- Banner -->
       <section class="banner flex">
         <h1 class="hide">Get Started</h1>
@@ -200,11 +202,11 @@
 
         <div class="flex"> <!-- Container for thesis section -->
           <div class="video flex column">
-            <video controls preload="metadata">
+            <video autoplay loop>
               <source src="resources/videos/thesis.mp4" type="video/mp4">
             </video>
             <div class="text">
-              <h3>Reimagine urban</h3>
+              <h3>Reimagine urbanism</h3>
               <blockquote>Here's the words under the video. They go on for a bit and you're gonna have to get the quote out the video.</blockquote>
             </div>
           </div>
@@ -232,7 +234,6 @@
 
         </div> <!-- closes thesis section container -->
       </section>
-
     </main>
 
     <!-- Footer -->

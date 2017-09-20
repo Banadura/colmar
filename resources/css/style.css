@@ -1,8 +1,4 @@
 /* Basics */
-.flex>* {
-  border: solid red 1px;
-}
-
 html {
   font-size: 16px;
   box-sizing: border-box;
@@ -13,6 +9,7 @@ html {
 }
 
 body {
+  font-family: Lato, sans-serif;
   background-color: pink;
 }
 
@@ -26,6 +23,10 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+}
+
+p {
+  font-family: Vollkorn, serif;
 }
 
 .flex {
@@ -129,6 +130,15 @@ aside img {
 
 .aside .image {
   width: 35%;
+  margin-right: 1rem;
+}
+
+.aside p {
+  margin: 0.5rem 0rem;
+}
+
+.aside a {
+  text-align: right;
 }
 /* Courses */
 .learning h2 {

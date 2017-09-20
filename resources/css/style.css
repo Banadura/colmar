@@ -1,9 +1,31 @@
+/* Basics */
+.flex>* {
+  border: solid red 1px;
+}
+
 html {
-box-sizing: border-box;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: pink;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 .flex {
@@ -18,8 +40,155 @@ box-sizing: inherit;
   display: none;
 }
 
+/* Header */
+
+header nav {
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+}
+
+nav li {
+  padding: 0rem 0.5rem;
+}
+
+ul {
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.logo {
+  align-items: center;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 540px) {
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+}
+
+/* Main container */
+main {
+  max-width: 1024px;
+  background-color: white;
+}
+
+/* Banner */
+.large-image {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.large-image img {
+  max-width: 100%;
+  display: block;
+}
+
+.start-here {
+  width: 40%;
+  justify-content: center;
+}
+
+/* Info - Jumbotron */
+.jumbotron {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.jumbotron img {
+  max-width: 100%;
+  display: block;
+}
+
+.aside-container {
+  width: 40%;
+}
+
+/* Info - Aside */
+
+aside {
+  margin-top: 1rem;
+}
+
+aside img {
+  width: 100%;
+  display: block;
+}
+.aside {
+  margin: 1rem;
+}
+
+.aside .image {
+  width: 35%;
+}
 /* Courses */
+.learning h2 {
+  text-align: center;
+  margin: 2rem 0rem;
+}
 
 .courses {
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0rem 4rem;
+  border: solid red 1px;
+}
+
+.course {
+  width: 29%;
+  margin: 1rem;
+}
+
+.course img {
+  width: 100%;
+}
+
+/* Thesis */
+.thesis h2 {
+  text-align: center;
+  margin: 2rem 0rem;
+}
+
+.video {
+  width: 60%;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis aside {
+  width: 40%;
+  margin-top: 0rem;
+}
+
+.aside .text {
+  width: 65%;
+}
+
+.thesis .flex {
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+}
+
+/* Footer */
+footer {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 3rem 2rem;
+}
+
+footer nav {
+  width: auto;
+  align-items: center;
 }

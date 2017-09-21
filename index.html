@@ -4,11 +4,13 @@
 - add favicon
 - add mobile to html
 - come back to media queries after type choices
-- fix header
 - animations!
 - choose colors
 - refactor ".align" stuff
 - fix dumb copy
+- toward end: get display:flex into one css command
+- style links and move them to the right of align boxes
+- check in with chelsea notes
 -->
 
 <html lang="en">
@@ -28,7 +30,9 @@
     <header class="desktop">
       <nav class="flex">
         <div class="logo flex">
-          <img src="resources/images/ic-logo.svg" alt="">
+          <a href="index.html">
+            <img src="resources/images/ic-logo.svg" alt="">
+          </a>
           <span>ColmarAcademy</span>
         </div>
         <ul class="flex">
@@ -123,7 +127,7 @@
 <!-- Learning Section -->
       <section class="learning">
         <h1 class="hide">Sample course lists</h1>
-        <h2>Start learning</h2>
+        <h2 class="section-title">Start learning</h2>
 
         <div class="courses flex"> <!-- Courses container -->
           <div class="course">
@@ -198,40 +202,42 @@
 <!-- Thesis Section -->
       <section class="thesis">
         <h1 class="hide">Recent thesis projects</h1>
-        <h2>Thesis exhibit</h2>
+        <h2 class="section-title">Thesis exhibit</h2>
 
         <div class="flex"> <!-- Container for thesis section -->
           <div class="video flex column">
-            <video autoplay loop>
+            <video  width="100%" height="auto" autoplay="true">
               <source src="resources/videos/thesis.mp4" type="video/mp4">
             </video>
-            <div class="text">
-              <h3>Reimagine urbanism</h3>
-              <blockquote>Here's the words under the video. They go on for a bit and you're gonna have to get the quote out the video.</blockquote>
-            </div>
+            <h3>Reimagine urbanism</h3>
+            <blockquote>Here's the words under the video.</blockquote>
           </div>
 
-          <aside class="flex column">
-            <div class="aside flex">
-              <div class="image">
-                <img src="resources/images/thesis-fisma.jpg" alt="Overhead of cluttered desk">
-              </div>
-              <div class="text">
-                <h3>Firma: Design and Prototype</h3>
-                <p>Designer showcase of newly prototyped products</p>
-              </div>
-            </div>
-            <div class="aside flex">
-              <div class="image">
-                <img src="resources/images/thesis-now-and-then.jpg" alt="Empire State Building in situ">
-              </div>
-              <div class="text">
-                <h3>Now and Then</h3>
-                <p>Research study about New York</p>
-              </div>
-            </div>
-          </aside>
+          <div class="aside-container">
+            <aside class="flex column">
 
+              <div class="aside flex">
+                <div class="image">
+                  <img src="resources/images/thesis-fisma.jpg" alt="Overhead of cluttered desk">
+                </div>
+                <div class="text">
+                  <h3>Firma: Design and Prototype</h3>
+                  <p>Designer showcase of newly prototyped products</p>
+                </div>
+              </div>
+
+              <div class="aside flex">
+                <div class="image">
+                  <img src="resources/images/thesis-now-and-then.jpg" alt="Empire State Building in situ">
+                </div>
+                <div class="text">
+                  <h3>Now and Then</h3>
+                  <p>Research study about New York</p>
+                </div>
+              </div>
+
+            </aside>
+          </div> <!-- closes aside-container -->
         </div> <!-- closes thesis section container -->
       </section>
     </main>

@@ -20,12 +20,20 @@ h1 {
   font-size: 2.25rem;
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
 h3 {
   font-size: 1.5rem;
 }
 
 p {
   font-family: Vollkorn, serif;
+}
+
+button {
+  padding: 0.5rem 1rem;
 }
 
 .flex {
@@ -40,14 +48,17 @@ p {
   display: none;
 }
 
-/* Header */
-.desktop {
-  position: fixed;
-  z-index: 5;
+.section-title {
+  text-align: center;
+  padding: 2rem 0;
 }
 
+/* Header */
 .desktop nav {
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
   height: 4rem;
 }
 
@@ -83,7 +94,7 @@ ul {
 /* Main container */
 main {
   padding: 1rem calc(50% - 500px);
-  background: #666;
+  background: white;
   position: relative;
   top: 4rem;
 }
@@ -113,22 +124,26 @@ main {
 .jumbotron img {
   max-width: 100%;
   display: block;
+  margin-bottom: 2rem;
 }
+
+blockquote {
+  margin-top: 1.5rem;
+}
+
+
+
+/* Aside - applies to Info and Thesis sections */
 
 .aside-container {
   width: 40%;
-}
-
-/* Info - Aside */
-
-aside {
-  margin-top: 1rem;
 }
 
 aside img {
   width: 100%;
   display: block;
 }
+
 .aside {
   margin: 1rem;
 }
@@ -142,14 +157,8 @@ aside img {
   margin: 0.5rem 0;
 }
 
-.aside a {
-  text-align: right;
-}
 /* Courses */
-.learning h2 { /* fix this */
-  text-align: center;
-  margin: 2rem 0;
-}
+
 
 .courses {
   flex-wrap: wrap;
@@ -168,27 +177,8 @@ aside img {
 }
 
 /* Thesis */
-.thesis h2 { /* fix this */
-  text-align: center;
-  margin: 2rem 0;
-}
-
 .video {
   width: 60%;
-}
-
-video {
-  width: 100%;
-  height: auto;
-}
-
-.thesis aside {
-  width: 40%;
-  margin-top: 0;
-}
-
-.aside .text {
-  width: 65%;
 }
 
 .thesis .flex {

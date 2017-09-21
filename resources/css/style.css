@@ -100,6 +100,10 @@ main {
 }
 
 /* Banner */
+.start-here {
+  padding-right: 2rem;
+}
+
 .large-image {
   width: 60%;
   margin: 2rem 1.5rem;
@@ -155,6 +159,12 @@ aside img {
 
 .aside p {
   margin: 0.5rem 0;
+}
+
+.aside-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Courses */

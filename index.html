@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <!-- TODO:
-- add favicon
+- achange favicon
 - add mobile to html
 - come back to media queries after type choices
 - animations!
@@ -12,6 +12,11 @@
 - style links and move them to the right of align boxes
 - check in with chelsea notes
 - figure out flex grow/shrink on course boxes
+- shadow/something on header
+- figure out bombass highlighter effect
+- close img tags, etc
+- figure out ARIA stuff
+
 -->
 
 <html lang="en">
@@ -20,9 +25,10 @@
     <title>Colmar Academy</title>
     <meta name='viewport'
       content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,900|Vollkorn&amp;subset=latin-ext" rel="stylesheet">
+    <link <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
     <link href="resources/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="./resources/images/lightbulb.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -48,7 +54,9 @@
     <header class="mobile">
       <nav class="flex">
         <div class="logo flex">
-          <img src="resources/images/ic-logo.svg" alt="Colmar Academy">
+          <a href="index.html">
+            <img src="resources/images/ic-logo.svg" alt="Colmar Academy">
+          </a>
         </div>
         <ul class="flex">
           <li><img src="resources/images/ic-on-campus.svg" alt="On campus"></li>
@@ -68,7 +76,7 @@
           <img src="resources/images/banner.jpg" alt="Three students studying at a picnic table">
         </div>
         <div class="start-here flex column">
-          <h1>Learn something new every day</h1>
+          <h1>Learn <span>something new</span> every day</h1>
           <h3>Every song you loved when you were young turns into Tintern Abbey.</h3>
           <button>Start here</button>
         </div>

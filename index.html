@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 
 <!-- TODO:
-- achange favicon
+- change favicon
 - add mobile to html
+- fix mobile nav spacing
 - come back to media queries after type choices
 - animations!
 - choose colors
 - refactor ".align" stuff
-- fix dumb copy
 - toward end: get display:flex into one css command
 - style links and move them to the right of align boxes
-- check in with chelsea notes
+- check in with slack notes
 - figure out flex grow/shrink on course boxes
 - shadow/something on header
-- figure out bombass highlighter effect
 - close img tags, etc
 - figure out ARIA stuff
 - style buttons
-
+- compare to wireframe at end
+- either change header or figure out how to change the .svg color
+- make comments pretty in html
+- make comments pretty in css
+- way to factor mobile stuff? like, the margins/padding on the big stuff?
 -->
 
 <html lang="en">
@@ -75,7 +78,7 @@
           <img src="resources/images/banner.jpg" alt="Three students studying at a picnic table">
         </div>
         <div class="start-here flex column">
-          <h1>Learn something new <span>every day</span></h1>
+          <h1>Learn something new <span class="highlight-container"><span class="highlight">every day</span></span></h1>
           <h3 class="normal-text">At Colmar, the classics meet the cutting edge.</h3>
           <button>Start here</button>
         </div>
@@ -88,9 +91,9 @@
           <div class="image">
             <img src="resources/images/information-main.jpg" alt="Man reading a book outdoors">
           </div>
-          <h2>It doesn't hurt to <span>keep practicing</span></h2>
-          <blockquote>The very excess of the aesthetic experience, the fact that it evaporates so fast upon contact with daily life, is a reminder of how impoverished daily life is.</blockquote>
-          <p>Emanuel, Sr. Strategist at Hiring.com</p>
+          <h2>It doesn't hurt to <span class="highlight-container"><span class="highlight">keep practicing</span></span></h2>
+          <blockquote>&#xf10d;My time at Colmar was more than just learning the curriculum. The passion of professors and fellow students is contagious, and it left me both more curious and more capable of taking a lead at work and in life.</blockquote>
+          <p>Emanuel, Senior Strategist at Hiring.com</p>
         </div> <!-- closes jumbotron -->
 
 
@@ -98,7 +101,8 @@
 
             <div class="aside flex">
               <div class="image">
-                <img src="resources/images/information-orientation.jpg" alt="Overhead of people walking a cobblestone path">
+                <img class="desktop" src="resources/images/information-orientation.jpg" alt="Overhead of people walking a cobblestone path">
+                <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="Overead of people walking a cobblestone path">
               </div>
               <div class="aside-text">
                 <h3>Orientation</h3>
@@ -109,7 +113,8 @@
 
             <div class="aside flex">
               <div class="image">
-                <img src="resources/images/information-campus.jpg" alt="Wood-walled study hall with large map">
+                <img class="desktop" src="resources/images/information-campus.jpg" alt="Wood-walled study hall with large map">
+                <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="Wood-walled study hall with large map">
               </div>
               <div class="aside-text">
                 <h3>Our campus</h3>
@@ -120,7 +125,8 @@
 
             <div class="aside flex">
               <div class="image">
-                <img src="resources/images/information-guest-lecture.jpg" alt="Oliver Sacks, svelte in a beret">
+                <img class="desktop" src="resources/images/information-guest-lecture.jpg" alt="Oliver Sacks, svelte in a beret">
+                <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sacks, svelte in a beret">
               </div>
               <div class="aside-text">
                 <h3>Guest lecture</h3>
@@ -137,7 +143,8 @@
         <h1 class="hide">Sample course lists</h1>
         <h2 class="section-title">Start learning</h2>
 
-        <div class="courses flex"> <!-- Courses container -->
+<!-- Courses containers - Desktop version -->
+        <div class="desktop courses flex">
           <div class="course">
             <div class="image">
               <img src="resources/images/course-software.jpg" alt="">
@@ -204,7 +211,15 @@
             </div>
           </div>
 
-        </div> <!-- closes courses -->
+        </div> <!-- closes courses - desktop-->
+
+        <div class="mobile mobile-courses flex column">
+          <h3>Software engineering</h3>
+          <h3>Computer art</h3>
+          <h3>Design</h3>
+          <h3>Data</h3>
+          <h3>Business</h3>
+          <h3>Marketing</h3>
       </section>
 
 <!-- Thesis Section -->
@@ -217,8 +232,10 @@
             <video  width="100%" height="auto" autoplay="true" loop="true">
               <source src="resources/videos/thesis.mp4" type="video/mp4">
             </video>
-            <h3>Reimagine urbanism</h3>
-            <blockquote>Here's the words under the video.</blockquote>
+            <div class="video-text">
+              <h3>Reimagine urbanism</h3>
+              <blockquote>One admirable aspect of the urban pastoral aesthetic, one that deserves to be retained, is the trend toward incorporating nature into urban life. </blockquote>
+            </div>
           </div>
 
 

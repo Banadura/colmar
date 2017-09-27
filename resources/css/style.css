@@ -256,6 +256,7 @@ main {
 .jumbotron {
   width: 60%;
   margin: 2em 1.5em;
+  background-color: #d7d9e0;
 }
 
 .jumbotron img {

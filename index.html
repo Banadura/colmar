@@ -2,8 +2,7 @@
 
 <!-- TODO:
 - change favicon
-- add mobile to html
-- fix mobile nav spacing
+- fix logo
 - come back to media queries after type choices
 - animations!
 - choose colors
@@ -11,7 +10,6 @@
 - toward end: get display:flex into one css command
 - style links and move them to the right of align boxes
 - check in with slack notes
-- figure out flex grow/shrink on course boxes
 - shadow/something on header
 - close img tags, etc
 - figure out ARIA stuff
@@ -32,7 +30,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,700" rel="stylesheet">
     <link href="resources/css/reset.css" rel="stylesheet" type="text/css">
     <link href="resources/css/style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="./resources/images/lightbulb.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="./resources/images/ic-logo.png">
   </head>
 
   <body>
@@ -44,7 +42,7 @@
           <a href="index.html">
             <img src="resources/images/ic-logo.svg" alt="">
           </a>
-          <span>ColmarAcademy</span>
+          <span><span class="logo-em">Colmar</span>Academy</span>
         </div>
         <ul class="flex">
           <li>On campus</li>
@@ -92,8 +90,8 @@
             <img src="resources/images/information-main.jpg" alt="Man reading a book outdoors">
           </div>
           <h2>It doesn't hurt to <span class="highlight-container"><span class="highlight">keep practicing</span></span></h2>
-          <blockquote>&#xf10d;My time at Colmar was more than just learning the curriculum. The passion of professors and fellow students is contagious, and it left me both more curious and more capable of taking a lead at work and in life.</blockquote>
-          <p>Emanuel, Senior Strategist at Hiring.com</p>
+          <blockquote>My time at Colmar was more than just learning the curriculum. The passion of professors and fellow students is contagious, and it left me both more curious and more capable of taking a lead at work and in life.</blockquote>
+          <p>- Emanuel, Senior Strategist at Hiring.com</p>
         </div> <!-- closes jumbotron -->
 
 
@@ -130,7 +128,7 @@
               </div>
               <div class="aside-text">
                 <h3>Guest lecture</h3>
-                <p>Join a holographic Oliver Sacks</p>
+                <p>Oliver Sacks discusses music and minds, in hologram form</p>
                 <a href="#">Read more</a>
               </div>
             </div>

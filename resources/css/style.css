@@ -100,6 +100,12 @@ nav {
 
 nav li {
   padding: 0 0.5rem;
+  transition: all 200ms ease;
+}
+
+nav li:hover {
+  color: #1da599;
+  cursor: pointer;
 }
 
 ul {
@@ -149,9 +155,6 @@ header img {
     padding-right: 0;
   }
 
-  .mobile img {
-    2rem;
-  }
 }
 
 /* Main container */
@@ -170,6 +173,7 @@ main {
 .large-image {
   width: 60%;
   margin: 2em 1.5em;
+  box-shadow: 2px 2px 4px gray;
 }
 
 .large-image img {
@@ -191,6 +195,13 @@ main {
   border: 0;
   color: white;
   background-color: #1da599;
+  box-shadow: 2px 2px 4px gray;
+  transition: all 200ms ease;
+}
+
+.banner button:hover {
+  background-color: rgb(255, 255, 0);
+  color: black;
 }
 
 /* Mobile size flex adjustments */
@@ -215,6 +226,10 @@ main {
 
   .start-here .normal-text {
     margin: 2em 0 1.5em 0;
+  }
+
+  .banner button {
+    align-self: center;
   }
 }
 
@@ -256,13 +271,13 @@ main {
 .jumbotron {
   width: 60%;
   margin: 2em 1.5em;
-  background-color: #d7d9e0;
 }
 
 .jumbotron img {
   max-width: 100%;
   display: block;
   margin-bottom: 2em;
+  box-shadow: 2px 2px 4px gray;
 }
 
 .jumbotron p {
@@ -290,6 +305,7 @@ blockquote {
 aside img {
   width: 100%;
   display: block;
+  box-shadow: 2px 2px 4px gray;
 }
 
 .aside {
@@ -312,6 +328,10 @@ aside img {
 
 .aside p {
   margin: 0.5em 0;
+}
+
+.aside a {
+  color: #1da599;
 }
 
 .aside-text {
@@ -338,6 +358,10 @@ aside img {
     padding: 0;
   }
 
+  .aside:nth-of-type(0n + 3) {
+    background-color: white;
+  }
+
   .aside .image {
     max-width: 100%;
     margin: 1rem 1rem 0 1rem;
@@ -359,6 +383,11 @@ aside img {
   background-color: #5c3e3a;
   color: white;
 }
+
+.learning .section-title {
+  text-shadow: 2px 2px 4px black;
+}
+
 /* Courses */
 
 .courses {
@@ -379,6 +408,14 @@ aside img {
 
 .course img {
   width: 100%;
+  -webkit-filter: opacity(.6);
+  filter: opacity(.6);
+  transition: all 200ms ease;
+}
+
+.course img:hover {
+  -webkit-filter: opacity(1.0);
+  filter: opacity(1.0);
 }
 
 .course-text {
@@ -387,9 +424,11 @@ aside img {
 
 @media only screen and (max-width: 660px) {
 
-  h3 {
+ .mobile-courses h3 {
     margin: 0 1rem 0.5rem 1rem;
     padding: 1rem;
+    background-color: white;
+    color: gray;
   }
 }
 

@@ -424,6 +424,10 @@ aside img {
 
 @media only screen and (max-width: 660px) {
 
+ .learning {
+   padding-bottom: 2rem;
+ }
+
  .mobile-courses h3 {
     margin: 0 1rem 0.5rem 1rem;
     padding: 1rem;

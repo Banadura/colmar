@@ -1,4 +1,4 @@
-/* Basics */
+/* -------- Basics -------- */
 html {
   box-sizing: border-box;
 }
@@ -6,15 +6,6 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-/*
-.flex>* {
-  border: solid red 1px;
-}
-
-.flex {
-  border: solid green 1px;
-}
-*/
 
 body {
   font-family: Montserrat, Helvetica, sans-serif;
@@ -49,6 +40,10 @@ button {
   padding: 0.5rem 1rem;
 }
 
+a:hover {
+  color: black;
+}
+
 .flex {
   display: flex;
 }
@@ -70,32 +65,31 @@ button {
   font-weight: 400;
 }
 
-/* Queries for font-size breakpoints */
+/* ---- Queries for font-size breakpoints ---- */
 
 @media only screen and (min-width: 660px) and (max-width: 900px) {
   body {
     font-size: 0.75rem;
   }
 }
-/*
-@media only screen and (max-width: 680px) {
-  .start-here {
-    font-size: 0.6rem;
-  }
-}*/
 
-/* Header */
+
+/* -------- Header -------- */
 nav {
   justify-content: space-between;
   position: fixed;
   width: 100%;
   z-index: 5;
-
   font-family: Roboto, sans-serif;
   height: 4rem;
   background-color: #d7d9e0;
   font-size: 1rem;
   border-bottom: solid #600 2px;
+}
+
+ul {
+  padding-right: 1rem;
+  align-items: center;
 }
 
 nav li {
@@ -108,12 +102,8 @@ nav li:hover {
   cursor: pointer;
 }
 
-ul {
-  padding-right: 1rem;
-  align-items: center;
-}
 
-/* Logo */
+/* -------- Logo -------- */
 
 .logo {
   align-items: center;
@@ -139,6 +129,7 @@ header img {
   display: none;
 }
 
+/* Mobile navigation */
 @media only screen and (max-width: 660px) {
 
   .desktop {
@@ -157,20 +148,22 @@ header img {
 
 }
 
-/* Main container */
+/* -------- Main container -------- */
 main {
   padding: 0 calc(50% - 575px);
   position: relative;
   top: 4rem;
 }
 
-/* Banner - desktop size */
+/* ----- Banner - desktop size ----- */
 
 .banner {
   background-color: #a1a1a2;
 }
 
 .large-image {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
   width: 60%;
   margin: 2em 1.5em;
   box-shadow: 2px 2px 4px gray;
@@ -179,6 +172,10 @@ main {
 .large-image img {
   max-width: 100%;
   display: block;
+}
+
+.banner .normal-text {
+  padding: 1em 0;
 }
 
 .start-here {
@@ -204,7 +201,7 @@ main {
   color: black;
 }
 
-/* Mobile size flex adjustments */
+/* Mobile size flex adjustments for banner */
 
 @media only screen and (max-width:660px) {
 
@@ -213,7 +210,10 @@ main {
   }
 
   .large-image {
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
     width: auto;
+    height: 18rem;
     margin: 0 0 2rem 0;
   }
 
@@ -233,7 +233,7 @@ main {
   }
 }
 
-/* Very silly highlighter effect */
+/* --- Very silly highlighter effect --- */
 
 .highlight-container, .highlight {
   position: relative;
@@ -267,7 +267,7 @@ main {
   z-index: 4;
 }
 
-/* Info - Jumbotron */
+/* -------- Info - Jumbotron -------- */
 .jumbotron {
   width: 60%;
   margin: 2em 1.5em;
@@ -295,7 +295,7 @@ blockquote {
   }
 }
 
-/* Aside - applies to Info and Thesis sections */
+/* ----- Aside - applies to Info and Thesis sections ----- */
 
 .aside-container {
   width: 40%;
@@ -346,6 +346,7 @@ aside img {
   margin-top: 2em;
 }
 
+/* --- Mobile shifts for .aside class --- */
 @media only screen and (max-width: 660px) {
 
   .aside-container {
@@ -377,7 +378,7 @@ aside img {
   }
 }
 
-/* Learning section */
+/* -------- Learning section -------- */
 
 .learning {
   background-color: #5c3e3a;
@@ -406,16 +407,19 @@ aside img {
   margin: 1em;
 }
 
-.course img {
-  width: 100%;
+.course {
   -webkit-filter: opacity(.6);
   filter: opacity(.6);
-  transition: all 200ms ease;
+  transition: all 250ms ease;
 }
 
-.course img:hover {
+.course:hover {
   -webkit-filter: opacity(1.0);
   filter: opacity(1.0);
+}
+
+.course img {
+  width: 100%;
 }
 
 .course-text {
@@ -428,15 +432,21 @@ aside img {
    padding-bottom: 2rem;
  }
 
- .mobile-courses h3 {
+ .mobile-course {
     margin: 0 1rem 0.5rem 1rem;
     padding: 1rem;
     background-color: white;
     color: gray;
+    cursor: pointer;
+    transition: color 200ms ease;
+  }
+
+  .mobile-course:hover {
+    color: black;
   }
 }
 
-/* Thesis */
+/* -------- Thesis -------- */
 .video {
   width: 60%;
   margin: 0 1.5em 1em 1.5em;
@@ -468,7 +478,7 @@ video {
   }
 }
 
-/* Footer */
+/* -------- Footer -------- */
 footer {
   justify-content: space-between;
   align-items: center;
